@@ -52,4 +52,10 @@
 
             }
         }
+
+        function logout() {
+            $this->_username = "";
+            $this->_password = "";
+            $this->_loggedIn = false;
+        }
     }
