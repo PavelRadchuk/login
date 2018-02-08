@@ -9,9 +9,15 @@ ini_set('display_errors', 1);
  */
 
 include "user.php";
+include "admin.php";
 echo"<h1>Test</h1>";
 
 
 $user1 = new user();
 $user1->login("username", "password");
 $user1->logout();
+
+$admin = new admin();
+$admin->setAccessLevel("5");
+$admin->getAccessLevel();
+$admin->editUser("testUser");

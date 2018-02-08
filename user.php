@@ -27,9 +27,9 @@ ini_set('display_errors', 1);
         {
             return $this->_username;
         }
-        function setUsername()
+        function setUsername($user)
         {
-            return $this->_username;
+            $this->_username = $user;
         }
         function setPassword($String)
         {
