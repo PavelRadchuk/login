@@ -38,12 +38,16 @@
                 echo "<p>to short</p>";
             }
         }
-        function loggedIn($username, $pass){
-            include('users.php');
-            //if($username != null && $logedIn != null) {
-            //    return false;
-            //}else{
-            //    set= true;
-            if(!isset($username)) or $password != $pass
+        function login($username, $pass) {
+            include 'users.php';
+            foreach($login as $key => $value) {
+                if($username == $key && $pass == $value) {
+                    $this->_loggedIn = true;
+                }
+                else {
+                    $this->_loggedIn = false;
+                }
+
             }
+        }
     }
