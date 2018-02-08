@@ -19,7 +19,7 @@ class admin extends user
         $this->_accessLevel = "";
     }
     function getAccessLevel(){
-        return $this->_accessLevel;
+        echo "<p>Access level: $this->_accessLevel</p>";
     }
     function setAccessLevel($level){
         $this->_accessLevel = $level;

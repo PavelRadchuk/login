@@ -25,7 +25,7 @@ ini_set('display_errors', 1);
          */
         function getUsername()
         {
-            return $this->_username;
+            echo "<p>Username: $this->_username</p>";
         }
         function setUsername($user)
         {
