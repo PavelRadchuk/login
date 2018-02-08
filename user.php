@@ -42,9 +42,11 @@
             include 'users.php';
             foreach($login as $key => $value) {
                 if($username == $key && $pass == $value) {
+                    echo "<p>$username is logged in</p>";
                     $this->_loggedIn = true;
                 }
                 else {
+                    echo "<p>Login error</p>";
                     $this->_loggedIn = false;
                 }
 
