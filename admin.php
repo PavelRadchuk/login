@@ -27,6 +27,6 @@ class admin
         return $this->_accessLevel;
     }
     function Admin($editUser){
-        
+
     }
 }
