@@ -18,4 +18,23 @@
             $this->_loggedIn = false;
         }
 
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+            return $this->_username;
+        }
+        public function setUsername()
+        {
+            return $this->_username;
+        }
+        public function setPassword($String)
+        {
+            $num = strlen ($String);
+            if($num <= 6){
+                $this->_password = $String;
+            }
+        }
+
     }
