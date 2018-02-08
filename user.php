@@ -9,7 +9,7 @@ ini_set('display_errors', 1);
  */
 
     class user{
-        private $_username;
+        private $username;
         private $_password;
         private $_loggedIn;
 
@@ -25,7 +25,7 @@ ini_set('display_errors', 1);
          */
         function getUsername()
         {
-            echo "<p>Username: $this->_username</p>";
+            return $this->_username;
         }
         function setUsername($user)
         {

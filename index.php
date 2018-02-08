@@ -15,9 +15,11 @@ echo"<h1>Test</h1>";
 
 $user1 = new user();
 $user1->login("username", "password");
-$user1->logout();
+$user1->setUsername("username");
 
 $admin = new admin();
 $admin->setAccessLevel("5");
 $admin->getAccessLevel();
-$admin->editUser("testUser");
+
+
+$admin->editUser($user1);

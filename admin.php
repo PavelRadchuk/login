@@ -25,6 +25,6 @@ class admin extends user
         $this->_accessLevel = $level;
     }
     function editUser($user){
-        echo "<p>Editing $user</p>";
+        echo "<p>Editing ".$user->getUsername()."</p>";
     }
 }
