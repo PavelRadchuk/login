@@ -21,20 +21,29 @@
         /**
          * @return string
          */
-        public function getUsername()
+        function getUsername()
         {
             return $this->_username;
         }
-        public function setUsername()
+        function setUsername()
         {
             return $this->_username;
         }
-        public function setPassword($String)
+        function setPassword($String)
         {
             $num = strlen ($String);
             if($num <= 6){
                 $this->_password = $String;
+            }else{
+                echo "<p>to short</p>";
             }
         }
-
+        function loggedIn($username, $pass){
+            include('users.php');
+            //if($username != null && $logedIn != null) {
+            //    return false;
+            //}else{
+            //    set= true;
+            if(!isset($username)) or $password != $pass
+            }
     }
